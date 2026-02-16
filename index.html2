@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My HTML Document</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+  <h1>Missed Connections</h1>
+  <p>In this hypertext I will be creating a site map showing the series of event that happened in order to capture a missed opportunity.</p>
+  <a href="page3.html">page2.html</a>
+</body>
+</html>
