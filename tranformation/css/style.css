@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #a8d5e2; /* calm blue */
+    color: #333;
+    text-align: center;
+    transition: all 0.8s ease;
+}
+
+#container {
+    margin-top: 20%;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* TRANSFORMED STATE */
+body.chaotic {
+    background-color: black;
+    color: red;
+}
+
+body.chaotic #title {
+    font-size: 50px;
+    letter-spacing: 5px;
+    transform: rotate(-5deg);
+}
+
+body.chaotic #text {
+    font-style: italic;
+}
+
+body.chaotic button {
+    background-color: red;
+    color: white;
+}
