@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Poem</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <button onclick="showPage('page1')">Intro</button>
+  <button onclick="showPage('page2')">Rhythm</button>
+  <button onclick="showPage('page3')">Emotion</button>
+</nav>
+
+<section id="page1" class="page active">
+  <h1>I Just Might</h1>
+  <p>Click the button to turn rhythm on</p>
+  <button onclick="toggleRhythm()">Toggle Rhythm</button>
+</section>
+
+<section id="page2" class="page">
+  <h2>Rhythm</h2>
+
+  <div class="card" onclick="changeCard(this)">
+    <p class="pulse">Doo-doo-doo-doo-doo</p>
+    <p class="pulse">Doo-doo-doo-doo-doo</p>
+  </div>
+
+  <div class="card" onclick="changeCard(this)">
+    <p>You stepped inside with a vibe</p>
+    <p>I ain't never seen</p>
+  </div>
+
+</section>
+
+<section id="page3" class="page">
+  <h2>Emotion</h2>
+
+  <div class="card" onclick="changeCard(this)">
+    <p class="bold">It would break my heart</p>
+    <p>if I find out you can't move</p>
+  </div>
+
+  <div class="card hover-effect">
+    <p>Hover over this line</p>
+    <p class="hidden">I just might make her my baby</p>
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
