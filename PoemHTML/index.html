@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I Just Might</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<section id="start" class="page active">
+  <h1>I Just Might</h1>
+  <p>An interactive poem experience</p>
+  <button onclick="showPage('page1')">Start</button>
+</section>
+
+<section id="page1" class="page">
+  <h2>First Impression</h2>
+
+  <div class="card" onclick="changeText(this)">
+    <p>You stepped inside with a vibe</p>
+    <p>I ain’t never seen</p>
+  </div>
+
+  <button onclick="showPage('page2')">Next</button>
+</section>
+
+<section id="page2" class="page">
+  <h2>Rhythm</h2>
+
+  <p>Turn the rhythm on</p>
+
+  <button onclick="togglePulse()">Turn On</button>
+
+  <div class="pulse-box">
+    <p class="pulse">Doo doo doo doo</p>
+    <p class="pulse">Doo doo doo doo</p>
+  </div>
+
+  <button onclick="showPage('page3')">Next</button>
+</section>
+
+<section id="page3" class="page">
+  <h2>Hidden Feelings</h2>
+
+  <div class="hover-box">
+    <p>Hover over me</p>
+    <p class="hidden-text">I just might make her my baby</p>
+  </div>
+
+  <button onclick="showPage('ending')">Finish</button>
+</section>
+
+<section id="ending" class="page">
+  <h1>The End</h1>
+  <p>Some feelings can’t stay hidden forever.</p>
+
+  <button onclick="showPage('start')">Restart</button>
+</section>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
